@@ -70,17 +70,17 @@ const Dashboard = () => {
 
     const expenseOptionHandler = async ({ id, category, description, amount }, index) => {
         console.log('edit expense', id, category, description, amount, index);
-        const washingtonRef = doc(db, "cities", "DC");
+        // const washingtonRef = doc(db, "cities", "DC");
 
-        // Atomically add a new region to the "regions" array field.
-        await updateDoc(washingtonRef, {
-            regions: arrayUnion("greater_virginia")
-        });
+        // // Atomically add a new region to the "regions" array field.
+        // await updateDoc(washingtonRef, {
+        //     regions: arrayUnion("greater_virginia")
+        // });
 
-        // Atomically remove a region from the "regions" array field.
-        await updateDoc(washingtonRef, {
-            regions: arrayRemove("east_coast")
-        });
+        // // Atomically remove a region from the "regions" array field.
+        // await updateDoc(washingtonRef, {
+        //     regions: arrayRemove("east_coast")
+        // });
     }
 
     useEffect(() => {
